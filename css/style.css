@@ -1,0 +1,229 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: 'Tomorrow', sans-serif;
+    color: #fff;
+}
+.cabecalho{
+    padding: 20px 0px;
+}
+.logo img{   
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.logo h3{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.85rem;
+    letter-spacing: 0.75em;
+}
+.botao{
+    float: right;
+    width: 50px;
+}
+.fa-bars, .fa-times{
+    font-size: 30px;
+    color: #fff;
+}
+.menu-container{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}          
+.menu ul{
+    margin: 0;
+    float: right; 
+}
+.menu ul li{
+    display: inline-block;
+    border-radius: 10px ;
+    padding: 0px 10px;
+    transition: background-color 0.3s;
+}
+.menu ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;    
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.281) 0%, rgba(148, 188, 233, 0.082) 100%);
+}
+.menu ul li:hover{
+    background-color: rgba(115, 55, 226, 0.075);
+    color: #fff;
+}
+.menu-mobile{
+    transition: 0.5s all ;     
+    position: relative;
+    left: 0;
+}
+.menu-mobile ul{
+    float: left; 
+}
+.menu-mobile ul li{
+    list-style: none;   
+    padding-bottom: 10px;
+}
+.menu-mobile ul li a{
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fff;    
+    font-size: 18px;
+    padding:5px 20px;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.281) 0%, rgba(148, 188, 233, 0.082) 100%);
+}
+.jobs{
+    margin-bottom: 50px;
+}
+.texto-central{
+    text-align: center;
+    padding: 50px 0px;    
+    font-size: 20px;   
+}
+.texto-central img{
+    width: 18px ;
+}
+#botao-git{
+    width: 200px;
+    border: 2px solid rgba(10, 10, 245, 0.192);
+    outline-style: none;
+    background: url('../img/midias-sociais/icons8-github-back.png') no-repeat;
+    background-size: 20%;
+    background-position: right;
+    padding: 10px 40px 10px 0px;
+    animation: botao-git 2s alternate infinite ;  
+    color: #fff;
+}
+.imagem-central{
+    padding: 10px 0px;
+}
+.imagem-central img {
+    width: 700px;
+    height: 300px;
+    opacity: 0.9;
+    transform: rotate(-5deg);
+}
+.cards-princi img{
+    margin: 40px auto;
+    border-radius: 5px;
+    float: right;
+}
+.la{
+    margin: 0px auto;
+    position: relative;
+    top: -150px;
+    display: inline-block;
+}
+.cards-jobs{
+    padding: 20px 5px ;
+    border-radius: 5px;
+    text-align: center;
+    perspective: 400px;     
+}
+.cards-jobs-cards{    
+    transform: rotateY(0deg);
+    transition: transform 2s ;
+    transform-style: preserve-3d;
+}
+.cards-jobs-cards img{
+    overflow: hidden;
+    border-radius: 15px;
+    opacity: .8;
+}
+.cards-jobs:hover > .cards-jobs-cards{
+    transform: rotateY(180deg);      
+}
+.front, .back{       
+    border-radius: 15px;
+    backface-visibility: hidden; 
+}
+.back{
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;  
+    transform: rotateY(180deg);
+    color: rgb(255, 255, 255);
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgb(148, 188, 233) 100%);
+}
+.back p{
+    padding: 20px 10px;
+    text-align: center;    
+    color: #fff;
+    font-size: 20px;    
+}
+.jobs{
+    padding: 20px 0;
+}
+.icones{
+    padding: 0px 0px 20px 0px;
+    margin-top: 30px;
+}
+.icones-cards{
+    border-radius: 30px ;
+}
+.rodape{
+    background-color: rgba(110, 109, 109, 0.171);
+    padding: 20px 0;
+}
+.rodape-texto{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.rodape-texto p{
+    font-size: 18px;   
+}
+.icones-midias ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.icones-midias ul li{
+    display: inline-block;
+    transition: transform 1s;
+}
+.icones-midias img{
+    width: 45px;
+}
+.icones-midias li:hover {
+    transform: scale(1.2);
+}
+
+#html{ transition: transform all 5s; animation: anima-icones-html 5s infinite;}
+#css{transition: transform all 4s; animation:anima-icones-css 4s infinite alternate-reverse linear;}
+#js{ transition: transform all 3s; animation: anima-icones-js 3s infinite;}
+#php{ transition: transform all 3s; animation: anima-icones-php 3s infinite;}
+#sql{transition: transform all 6s; animation:anima-icones-sql 3s infinite alternate;}
+
+@keyframes anima-icones-html {
+    0%{transform: translateY(0px);}
+    50%{transform: translateX(-15px);}    
+    100%{transform: translateY(0px);}
+}
+@keyframes anima-icones-css {
+    0%{transform: rotate(30deg);}
+    100%{transform: rotate(-30deg);}
+}
+@keyframes anima-icones-js {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(5px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes anima-icones-php {
+    0%{transform: scale(1.1);}
+    50%{transform: scale(0.9);}
+    100%{transform: scale(1.1);}
+}
+@keyframes anima-icones-sql {
+    0%{transform: translateX(3px);}
+    45%{transform: translateY(3px);}
+    75%{transform: translateX(-3px);}
+    100%{transform: translateY(-3px);}
+}
+@keyframes botao-git{    
+    to{transform: scale(1.08);}
+}

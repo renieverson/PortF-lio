@@ -1,0 +1,84 @@
+@media (max-width: 575.98px) { 
+    .logo{ margin-bottom: 20px;}
+    .menu-container{
+	display:flex;
+	align-items: center;
+	justify-content: flex-start;
+    }  
+    .menu{
+        position: absolute;
+        left: -250%;
+    }
+    .menu-botao{ display: block;}
+
+    .texto-central{
+        text-align: center;
+        padding: 20px 0px;
+        color: #fff;        
+    }
+    .texto-central p{
+    	font-size: 21px;    
+    }     
+    .cards-jobs{
+        height: 350px !important;
+        overflow: hidden;
+    }
+    .rodape-texto{
+        justify-content: center;
+    }
+    .icones-midias{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .icones-midias img{
+        width: 2.4rem;
+    }
+ }
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo{ margin-bottom: 30px;}
+    .menu-container{
+	display:flex;
+	align-items: center;
+	justify-content: flex-start;
+    }  
+    .menu{
+        position: absolute;
+        left: -100%;}
+    .menu-botao{ display: block;}
+    .texto-central{
+        text-align: center;
+        padding: 40px 0px;                
+    }
+    .texto-central p{
+    	font-size: 21px;    
+    }    
+    .menu-mobile{
+        left: 0;
+    }
+    .cards-princi{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .icones-midias img{
+        width: 2.4rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .menu{ display: block;
+    }
+    .texto-central p{
+        font-size: 19px;
+    }    
+ }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .texto-central p{
+	font-size: 22px;
+    }  
+ }
+@media (min-width: 1200px) { 
+    .texto-central p{
+	font-size: 23px;
+    } 
+ }
